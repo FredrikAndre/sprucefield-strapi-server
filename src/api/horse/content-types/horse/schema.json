@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "horses",
+  "info": {
+    "singularName": "horse",
+    "pluralName": "horses",
+    "displayName": "Horse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Body": {
+      "type": "richtext",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
